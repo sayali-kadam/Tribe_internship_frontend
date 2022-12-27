@@ -81,7 +81,7 @@ const Navbar = () => {
         <HorizontalStack>
           <AiFillFileText
             size={33}
-            color={theme.palette.warning.dark}
+            color={theme.palette.secondary.light}
             onClick={() => navigate("/")}
           />
           <Typography
@@ -104,7 +104,6 @@ const Navbar = () => {
               sx={{ flexGrow: 1, maxWidth: 300 }}
               onChange={handleChange}
               value={search}
-              color="text.warning"
             />
           </Box>
         )}
@@ -124,17 +123,17 @@ const Navbar = () => {
               {/* <IconButton component={Link} to={"/messenger"}>
                 <AiFillMessage />
               </IconButton> */}
-              <IconButton component={Link}  to={"/users/" + username} color="text.warning">
-                <UserAvatar width={30} height={30} username={user.username} color="text.warning"/>
+              <IconButton component={Link}  to={"/users/" + username}>
+                <UserAvatar width={30} height={30} username={user.username} />
               </IconButton>
-              <Button onClick={handleLogout} color="text.warning">Logout</Button>
+              <Button onClick={handleLogout}>Logout</Button>
             </>
           ) : (
             <>
-              <Button variant="text" sx={{ minWidth: 80 }} href="/signup" color="text.warning">
+              <Button variant="text" sx={{ minWidth: 80 }} href="/signup">
                 Sign Up
               </Button>
-              <Button variant="text" sx={{ minWidth: 65 }} href="/login" color="text.warning">
+              <Button variant="text" sx={{ minWidth: 65 }} href="/login">
                 Login
               </Button>
             </>
@@ -149,7 +148,6 @@ const Navbar = () => {
             fullWidth
             onChange={handleChange}
             value={search}
-            color="text.warning"
           />
         </Box>
       )}
