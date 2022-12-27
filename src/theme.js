@@ -11,7 +11,6 @@ const theme = createTheme({
           ...{
             padding: theme.spacing(2),
             borderWidth: "1.5px",
-            backgroundColor: "Black",
           },
         }),
       },
@@ -20,6 +19,14 @@ const theme = createTheme({
       defaultProps: {
         maxWidth: "md",
       },
+    },
+    palette: {
+      background: {
+        default: "#222222"
+      },
+      text: {
+        primary: "#ffffff"
+      }
     },
   },
 });
