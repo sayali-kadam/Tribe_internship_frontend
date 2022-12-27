@@ -81,7 +81,7 @@ const Navbar = () => {
         <HorizontalStack>
           <AiFillFileText
             size={33}
-            color={theme.palette.primary.main}
+            color={theme.palette.secondary.light}
             onClick={() => navigate("/")}
           />
           <Typography

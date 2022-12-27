@@ -44,7 +44,7 @@ const LoginView = () => {
   return (
     <Container maxWidth={"xs"} sx={{ mt: 6 }}>
       <Stack alignItems="center">
-        <Typography variant="h2" color="text.secondary" sx={{ mb: 6 }}>
+        <Typography variant="h2" color="theme.palette.secondary.light" sx={{ mb: 6 }}>
           <Link to="/" color="inherit" underline="none">
             Social Media
           </Link>
@@ -52,7 +52,7 @@ const LoginView = () => {
         <Typography variant="h5" gutterBottom>
           Login
         </Typography>
-        <Typography color="text.secondary">
+        <Typography color="theme.palette.secondary.light">
           Don't have an account yet? <Link to="/signup">Sign Up</Link>
         </Typography>
         <Box component="form" onSubmit={handleSubmit}>
