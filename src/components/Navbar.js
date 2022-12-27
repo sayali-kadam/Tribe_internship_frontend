@@ -81,14 +81,14 @@ const Navbar = () => {
         <HorizontalStack>
           <AiFillFileText
             size={33}
-            color={theme.palette.secondary.light}
+            color={theme.palette.warning.dark}
             onClick={() => navigate("/")}
           />
           <Typography
             sx={{ display: mobile ? "none" : "block" }}
             variant={navbarWidth ? "h6" : "h4"}
             mr={1}
-            color={palette.secondary.light}
+            color={theme.palette.warning.dark}
           >
             {/* <Link to="/" color="inherit"> */}
               Social Media
