@@ -11,6 +11,7 @@ const theme = createTheme({
           ...{
             padding: theme.spacing(2),
             borderWidth: "1.5px",
+            backgroundColor: "Black",
           },
         }),
       },
