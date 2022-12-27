@@ -104,7 +104,7 @@ const Navbar = () => {
               sx={{ flexGrow: 1, maxWidth: 300 }}
               onChange={handleChange}
               value={search}
-              color={theme.palette.warning.dark}
+              color="text.warning"
             />
           </Box>
         )}
@@ -124,17 +124,17 @@ const Navbar = () => {
               {/* <IconButton component={Link} to={"/messenger"}>
                 <AiFillMessage />
               </IconButton> */}
-              <IconButton component={Link}  to={"/users/" + username}>
-                <UserAvatar width={30} height={30} username={user.username} />
+              <IconButton component={Link}  to={"/users/" + username} color="text.warning">
+                <UserAvatar width={30} height={30} username={user.username} color="text.warning"/>
               </IconButton>
-              <Button onClick={handleLogout}>Logout</Button>
+              <Button onClick={handleLogout} color="text.warning">Logout</Button>
             </>
           ) : (
             <>
-              <Button variant="text" sx={{ minWidth: 80 }} href="/signup">
+              <Button variant="text" sx={{ minWidth: 80 }} href="/signup" color="text.warning">
                 Sign Up
               </Button>
-              <Button variant="text" sx={{ minWidth: 65 }} href="/login">
+              <Button variant="text" sx={{ minWidth: 65 }} href="/login" color="text.warning">
                 Login
               </Button>
             </>
@@ -149,6 +149,7 @@ const Navbar = () => {
             fullWidth
             onChange={handleChange}
             value={search}
+            color="text.warning"
           />
         </Box>
       )}
