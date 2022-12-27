@@ -120,9 +120,9 @@ const Navbar = () => {
           </IconButton>
           {user ? (
             <>
-              <IconButton component={Link} to={"/messenger"}>
+              {/* <IconButton component={Link} to={"/messenger"}>
                 <AiFillMessage />
-              </IconButton>
+              </IconButton> */}
               <IconButton component={Link}  to={"/users/" + username}>
                 <UserAvatar width={30} height={30} username={user.username} />
               </IconButton>

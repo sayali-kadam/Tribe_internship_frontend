@@ -14,7 +14,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { login } from "../../api/users";
 import ErrorAlert from "../ErrorAlert";
 import { loginUser } from "../../helpers/authHelper";
-import Copyright from "../Copyright";
 
 const LoginView = () => {
   const navigate = useNavigate();
@@ -83,9 +82,6 @@ const LoginView = () => {
           <Button type="submit" fullWidth variant="contained" sx={{ my: 2 }}>
             Login
           </Button>
-        </Box>
-        <Box sx={{ mt: 3 }}>
-          <Copyright />
         </Box>
       </Stack>
     </Container>

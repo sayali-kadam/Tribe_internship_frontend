@@ -12,7 +12,6 @@ import React, { useState } from "react";
 import { signup } from "../../api/users";
 import { loginUser } from "../../helpers/authHelper";
 import { useNavigate } from "react-router-dom";
-import Copyright from "../Copyright";
 import ErrorAlert from "../ErrorAlert";
 import { isLength, isEmail, contains } from "validator";
 
@@ -127,9 +126,6 @@ const SignupView = () => {
           <Button type="submit" fullWidth variant="contained" sx={{ my: 2 }}>
             Sign Up
           </Button>
-        </Box>
-        <Box sx={{ mt: 3 }}>
-          <Copyright />
         </Box>
       </Stack>
     </Container>
