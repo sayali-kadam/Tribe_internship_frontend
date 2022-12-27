@@ -88,7 +88,7 @@ const Navbar = () => {
             sx={{ display: mobile ? "none" : "block" }}
             variant={navbarWidth ? "h6" : "h4"}
             mr={1}
-            color={theme.palette.primary.main}
+            color={theme.palette.secondary.light}
           >
             {/* <Link to="/" color="inherit"> */}
               Social Media
