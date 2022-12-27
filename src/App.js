@@ -38,7 +38,7 @@ function App() {
         <CssBaseline />
         <GlobalStyles
           styles={{
-            body: { backgroundColor: "#1d0e6b" },
+            body: { backgroundColor: "#a5bad9" },
           }}
         />
         <Routes>

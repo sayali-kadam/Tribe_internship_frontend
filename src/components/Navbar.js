@@ -79,11 +79,6 @@ const Navbar = () => {
         spacing={!mobile ? 2 : 0}
       >
         <HorizontalStack>
-          <AiFillFileText
-            size={33}
-            color={theme.palette.warning.dark}
-            onClick={() => navigate("/")}
-          />
           <Typography
             sx={{ display: mobile ? "none" : "block" }}
             variant={navbarWidth ? "h6" : "h4"}
