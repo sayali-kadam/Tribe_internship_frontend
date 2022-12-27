@@ -36,6 +36,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <CssBaseline />
+        <GlobalStyles
+          styles={{
+            body: { backgroundColor: "#000000" },
+          }}
+        />
         <Routes>
           <Route path="/" element={<ExploreView />} />
           <Route path="/posts/:id" element={<PostView />} />

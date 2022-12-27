@@ -20,14 +20,6 @@ const theme = createTheme({
         maxWidth: "md",
       },
     },
-    palette: {
-      background: {
-        default: "#222222"
-      },
-      text: {
-        primary: "#ffffff"
-      }
-    },
   },
 });
 
