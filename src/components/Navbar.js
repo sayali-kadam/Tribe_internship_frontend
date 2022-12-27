@@ -104,6 +104,7 @@ const Navbar = () => {
               sx={{ flexGrow: 1, maxWidth: 300 }}
               onChange={handleChange}
               value={search}
+              color={theme.palette.warning.dark}
             />
           </Box>
         )}
