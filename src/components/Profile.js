@@ -70,9 +70,9 @@ const Profile = (props) => {
           )}
 
           {currentUser && user._id !== currentUser.userId && (
-            <Button variant="outlined" onClick={props.handleMessage}>
+            {/* <Button variant="outlined" onClick={props.handleMessage}>
               Message
-            </Button>
+            </Button> */}
           )}
 
           <HorizontalStack>
